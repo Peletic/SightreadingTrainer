@@ -1,4 +1,4 @@
-import State from "@/app/State";
+import State from "@/lib/State";
 
 
 const DIMENSION_WIDTH_STRING = ""

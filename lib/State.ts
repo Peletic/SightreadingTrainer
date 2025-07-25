@@ -1,4 +1,4 @@
-import Sheet from "@/app/Sheet";
+import Sheet from "@/lib/Sheet";
 
 export default class State {
     sheet : Sheet = new Sheet()
