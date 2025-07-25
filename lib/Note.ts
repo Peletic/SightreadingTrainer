@@ -1,10 +1,10 @@
-export type natKey = "C"|"D"|"E"|"F"|"G"|"A"|"B"
-export type sharpKey = "C#"|"D#"|"F#"|"G#"|"A#"
-export type flatKey = "Db"|"Eb"|"Gb"|"Ab"|"Bb"
+export type NatKey = "C"|"D"|"E"|"F"|"G"|"A"|"B"
+export type SharpKey = "C#"|"D#"|"F#"|"G#"|"A#"
+export type FlatKey = "Db"|"Eb"|"Gb"|"Ab"|"Bb"
 
-export type octave = 0|1|2|3|4|5|6|7|8
+export type Octave = 0|1|2|3|4|5|6|7|8
 
-export type key = natKey | sharpKey | flatKey;
+export type Key = NatKey | SharpKey | FlatKey;
 
 // We may also need accidental naturals in the future. TBD
 
