@@ -13,9 +13,12 @@ A web-based application meant to help users with their sheet music muscle memory
 - qnote
 - half note
 - whole note
+- generic rests
+``` diff
 - qrest
 - hrest
 - wrest
+```
 - score field queue + spawn/despawn helper
 - score synth
 - score elements slide

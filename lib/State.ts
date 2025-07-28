@@ -1,7 +1,7 @@
-import Sheet from "@/lib/Sheet";
+import Score from "@/lib/Score";
 
 export default class State {
-    sheet : Sheet = new Sheet()
+    score : Score = new Score()
 
     constructor() {
 
