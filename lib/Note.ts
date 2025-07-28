@@ -9,14 +9,14 @@ export type Key = NatKey | SharpKey | FlatKey;
 // We may also need accidental naturals in the future. TBD
 
 export class Note {
-    key: key
+    key: Key
     beats: number
-    octave: octave
+    octave: Octave
 
     startingBeat: number
     endingBeat: number
 
-    constructor(key: key, octave: octave, beats: number, startingBeat: number) {
+    constructor(key: Key, octave: Octave, beats: number, startingBeat: number) {
         this.key = key;
         this.beats = beats;
         this.octave = octave;
