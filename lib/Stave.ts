@@ -1,13 +1,16 @@
 import {Note} from "@/lib/Note";
+import Clef from "@/lib/generics/Clef";
 
 export default class Stave {
     // time sig should be global for the whole piece ATP. changing time sigs mid-song will be added later
     // timeSignature
 
-    constructor(notes: {[noteIdx: number] : Note[]} = {}) {
+    constructor(clef: Clef, notes: {[noteIdx: number] : Note[]} = {}) {
+        this.clef = clef;
         this.notes = notes;
     }
 
+    clef : Clef
     notes : {[noteIdx : number] : Note[]}= {
 
     }
