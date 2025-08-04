@@ -4,6 +4,7 @@ A web-based application meant to help users with their sheet music muscle memory
 
 ### TODO
 
+#### - look into how wikimedia licenses their svgs and add proper credits
 
 **Core**
 
