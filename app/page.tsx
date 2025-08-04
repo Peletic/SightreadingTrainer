@@ -1,14 +1,16 @@
+"use client"
 import Image from "next/image";
+import ScoreField from "@/components/ScoreField";
+import {useState} from "react";
+import State from "@/lib/State";
 
 export default function Home() {
+    const [state, setState] = useState<State>(new State())
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col">
-        Sightreading Trainer
+    <div className="font-sans min-h-screen sm:p-20">
+      <main className="min-w-full min-h-[85vh] bg-red-400 flex flex-col">
+          <ScoreField state={state} setState={setState}></ScoreField>
       </main>
-      <footer>
-        Footer
-      </footer>
     </div>
   );
 }
