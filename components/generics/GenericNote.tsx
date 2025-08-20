@@ -29,6 +29,8 @@ export default function GenericNote({note}: { note: Note }) {
     // we will use a negative top margin dict to accomplish our desired mapped offset
     // assume qnote e4 for testing
 
+    note.beats
+
     return (<div className={`text-black text-[76px] h-full mx-auto`}
                  style={{marginTop: `${offsetMap["0"][note.key]}px`}}>
         {musicCharacterMap.nsQNote.charPlain}
