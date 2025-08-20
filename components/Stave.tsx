@@ -3,6 +3,8 @@ import * as Staff from "@/lib/Stave"
 import Clef from "@/components/clefs/Clef";
 import Measure from "@/components/Measure";
 import StaveLine from "@/components/StaveLine"
+import GenericNote from "@/components/generics/GenericNote";
+import {Note} from "@/lib/Note";
 
 export default function Stave() {
 
@@ -11,12 +13,24 @@ export default function Stave() {
 
     const testCase = new Staff.default(Treble)
 
+
     return (<div className={"grow bg-green-400 w-[95%] min-h-[100%] relative grid mx-auto gap-6 grid-cols-1 row-auto justify-start"}>
         <StaveLine>
             <div className={"bg-pink-400/80 h-full w-full relative flex flex-row justify-start"}>
                 <Clef clef={testCase.clef.name}/>
             </div>
-            <Measure/>
+            <Measure>
+                <GenericNote note={new Note("C", 4, 1, 1)}/>
+                <GenericNote note={new Note("D", 4, 1, 1)}/>
+                <GenericNote note={new Note("E", 4, 1, 1)}/>
+                <GenericNote note={new Note("E", 4, 1, 1)}/>
+            </Measure>
+            <Measure>
+                <GenericNote note={new Note("E", 4, 1, 1)}/>
+                <GenericNote note={new Note("F", 4, 1, 1)}/>
+                <GenericNote note={new Note("G", 4, 1, 1)}/>
+                <GenericNote note={new Note("A", 4, 1, 1)}/>
+            </Measure>
         </StaveLine>
 
         <StaveLine>
